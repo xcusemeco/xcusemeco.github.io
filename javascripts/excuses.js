@@ -153,6 +153,14 @@ function imagineBullshitExcuses() {
       description: "34th Street Subway Fight",
       text: "I got out of my seat to give it to  a pregnant lady, and this guy stole it. Even though he was twice my size, I felt like I couldn’t just stand by and let that happen. Long story short, he apologized.",
       delayInMinutes: 58
+    },
+    {
+      name: "R Train ",
+      address: "degraw and 3rd",
+      location: "",
+      description: "Degraw and 3rd R Train MTA DELAY",
+      text: "Degraw and 3rd R Train MTA DELAY",
+      delayInMinutes: 20
     }
   ];
   pinpointExcuses();
