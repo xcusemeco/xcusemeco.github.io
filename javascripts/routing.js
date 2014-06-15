@@ -48,7 +48,7 @@ function locationToLatLng(location) {
 }
 
 function formatExcuse(excuse) {
-  return "<span style=color:#555;font-size:18px;line-height:20px;margin-bottom:10px;><br />" + excuse["description"] + " at " + excuse["name"] + "<br />" + excuse["text"] + "<br />" + flavor() + formatExcuseDuration(excuse["delayInMinutes"]) + " wasted!</span>";
+  return "<div style=padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;box-sizing:border-box;-moz-box-sizing:border-box;background:rgba(16,67,134,.2);color:#111;font-size:24px;line-height:30px;margin-top:10px;>" + excuse["description"] + " at " + excuse["name"] + "<br />" + excuse["text"] + "<br />" + flavor() + formatExcuseDuration(excuse["delayInMinutes"]) + " wasted!</div>";
 }
 
 function formatExcuseDuration(minutes) {
@@ -76,5 +76,5 @@ function formatExcuseDuration(minutes) {
 }
 
 function flavor() {
-  return _.sample(["Nice! ", "Awwww yeeeaaah! ", "Shhhhh...", "Rad! ", "Cold blooded. ", "Procrastinacious! ", "Whatever. "]);
+  return _.sample(["Nice! ", "Awwww yeeeaaah! ", "Shhhhh...", "Rad! ", "Cold blooded. ", "Sick. ", "Boom. ", "Procrastinacious! ", "Whatever. "]);
 }

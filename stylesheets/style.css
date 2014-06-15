@@ -140,7 +140,7 @@ img.adp-marker {margin-left:10px;box-sizing:border-box;-moz-box-sizing:border-bo
 .adp-step, .adp-substep {padding:6px;box-sizing:border-box;-moz-box-sizing:border-box;}
 div.form-group input, div.form-group select  {font-size:16px;}
 .gm-iw {font-family: 'Archivo Narrow', sans-serif;}
-p#intro {padding:20px;box-sizing:border-box;-moz-box-sizing:border-box;font-size:24px;line-height:30px;}
+p#intro {padding:20px 20px 0;box-sizing:border-box;-moz-box-sizing:border-box;font-size:24px;line-height:30px;}
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         color: #777;

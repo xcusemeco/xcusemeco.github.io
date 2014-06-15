@@ -143,12 +143,36 @@ function requestRoute(start, end, mode) {
       embiggenRoute(response.routes[0]);
       if (minutesAlreadyExcused == minutesExcused) {
         directionsDisplay.setDirections(response);
+        // setMarkers();
         document.getElementById('intro').innerHTML = '';
         document.getElementById('intro').style.padding = "0px 0px 0px 0px";
       } else {
         requestRoute(start, end, mode);
       }
     }
+  });
+}
+
+function setMarkers() {
+  var image = {
+    url: 'icons/iconCrime.png',
+    size: new google.maps.Size(20, 32),
+    origin: new google.maps.Point(0,0),
+    anchor: new google.maps.Point(0, 32)
+  };
+  var shape = {
+    coords: [1, 1, 1, 20, 18, 20, 18 , 1],
+    type: 'poly'
+  };
+  _.each(excusesUsed, function(excuse, index) {
+    var marker = new google.maps.Marker({
+        position: excuse.location,
+        map: map,
+        icon: image,
+        shape: shape,
+        title: excuse.name,
+        zIndex: index
+    });
   });
 }
 
