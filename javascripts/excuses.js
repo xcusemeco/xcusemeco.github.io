@@ -56,7 +56,7 @@ function imagineBullshitExcuses() {
       location: "",
       description: "Indian Point Energy Center",
       text: "The nuclear power plant upstate melted down and my route was filled with mutant cannibals.",
-      delayInMinutes: 90
+      delayInMinutes: 999
     },
     {
       name: "Father Day Lunch",
